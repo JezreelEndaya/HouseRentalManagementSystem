@@ -1,0 +1,80 @@
+:root {
+    --main-font-family: Arial, Helvetica, sans-serif;
+    --main-color: #004d8b;
+    --secondary-color: #229bff;
+    --warning: rgb(255, 87, 87);
+    --success: #04AA6D;
+    --success-hover: #028d5a;
+}
+
+.modal{
+    width: 45%;
+    background-color: green;
+    position: absolute;
+    top: 25%;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid rgb(204, 204, 204);
+    padding: 10px;
+    display: none;
+}
+
+
+
+.close-modal{
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    right: 0;
+    width: 40px;
+    cursor: pointer;
+    transition: all .1s;
+}
+
+.close-modal:hover{
+    transform: scale(1.1);
+}
+
+.close-modal i{
+    font-size: 1.4rem;
+    
+}
+
+.payment-content{
+    padding: 20px;
+}
+
+.payment-content h1{
+    font-size: 2rem;
+}
+
+.pay-button{
+    padding: 10px 20px;
+    width: 100px;
+    background-color: var(--success);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    color: white;
+}
+
+.pay-button:hover{
+    background-color: var(--success-hover);
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer p{
+    font-size: 1.2rem;
+}
+
+.footer-info p{
+    font-size: 1rem;
+    font-family: var(--main-font-family);
+    padding: 10px;
+    border-bottom: 1px solid rgb(224, 224, 224);
+}

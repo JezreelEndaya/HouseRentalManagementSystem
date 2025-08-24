@@ -1,0 +1,22 @@
+body{
+    background-color: #ececec;
+    display: flex;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card p:nth-child(2){
+    font-size: 1.8rem;
+    margin-top: 15px;
+}
+
+.card p:nth-child(3),
+.card p:nth-child(4){
+    margin-top: 15px;
+}
+ 
+

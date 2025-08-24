@@ -1,0 +1,246 @@
+/* default css for every content */
+
+:root {
+    --main-font-family: Arial, Helvetica, sans-serif;
+    --main-color: #004d8b;
+    --secondary-color: #229bff;
+    --warning: rgb(255, 87, 87);
+    --success: #04AA6D;
+    --success-hover: #028d5a;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.container{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    max-width: 1920px;
+    background-color: #ececec;
+}
+
+.container main{
+    width: 100%;
+}
+
+main header{
+    width: 100%;
+    line-height: 60px;
+    background-color: white;
+    padding: 0 40px;
+}
+
+main .content{
+    width: 100%;
+    height: auto;
+    max-height: 95%;
+    padding: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    overflow: auto;
+}
+/*  */
+
+.sidebar{
+    min-width: 250px;
+    height: 100%;
+    background-color: white;
+    box-shadow: 0 0 10px rgb(196, 196, 196); 
+    position: relative;
+}
+
+.sidebar .header{
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header .hamburger{
+    display: inline-block;
+}
+
+
+.hamburger span{
+    display: block;
+    margin-top: 3px;
+    background-color: black;
+    height: 3px;
+    width: 20px;
+}
+
+.sidebar .nav{
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+    overflow: scroll;
+}
+
+.sidebar .nav ul{
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    margin-top: 5x;
+}
+
+
+.sidebar .nav ul li{
+    padding: 3px;
+}
+
+.sidebar .nav ul li a{
+    display: inline-block;
+    text-decoration: none;
+    width: 100%;
+    padding:15px 35px;
+    color: rgb(49, 49, 49);
+    position: relative;
+    border-radius: 10px;
+}
+
+.sidebar .nav ul li a p + i{
+    position: absolute;
+    right: 0;
+    padding-right: 30px;
+    font-size: 1rem !important;
+}
+
+.side{
+    display: flex;
+    align-items: center;
+}
+
+.side i:first-child{
+    margin-right: 10px;
+    font-size: 1.7rem;
+    display: inline-block;
+    width: 30px;
+    color: #004d8b;
+    text-align: center;
+}
+
+.sidebar .nav ul li a:hover{
+    background-color: var(--main-color);
+    color: white;
+}
+
+.sidebar .nav ul li a:hover .side i{
+    background-color: var(--main-color);
+    color: white;
+}
+
+.sub-menu{
+    position: static;
+    max-height: 0;
+    transition: max-height .5s ease-in-out;
+    overflow: hidden;
+    background-color: rgb(236, 236, 236);
+}
+
+.sub-menu.active{
+    max-height: 1000px;
+    box-shadow: rgba(167, 167, 167, 0.15) 0px 3px 3px 0px inset;
+}
+
+.sub-menu a{
+    padding-left: 70px;
+}
+
+.logout{
+    width: 100%;
+    height: fit-content;
+    position: absolute;
+    bottom: 0;
+}
+
+.logout .link{
+    width: 100%;
+}
+
+a.active{
+    background-color: var(--main-color);
+    color: white !important;
+}
+
+a.active .r{
+color: white;
+}
+
+
+@media only screen and (max-width: 670px) {
+    .content{
+        padding: 10px !important;
+    }
+    .sidebar{
+        position: fixed;
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+    }
+
+    .sidebar.active{
+        position: fixed;
+        width: 100%;
+        top: 60px;
+        height: auto;
+    }
+
+    .sidebar .header{
+       display: none;
+    }
+
+    .hamburger2{
+        display: block;
+        position: absolute;
+        right: 0;
+        padding: 20px;
+        cursor: pointer;
+    }
+
+    .hamburger2 span{
+        display: block;
+        margin-top: 3px;
+        background-color: black;
+        height: 3px;
+        width: 20px;
+    }
+
+    .logout{
+        position: static;
+        height: auto;
+    }
+}
+
+
+::-webkit-scrollbar {
+    width: 2px; /* Set the width of the scrollbar */
+  }
+  
+::-webkit-scrollbar-track {
+background-color: #f1f1f1; /* Set the color of the track */
+}
+
+::-webkit-scrollbar-thumb {
+background-color: #888; /* Set the color of the thumb */
+border-radius: 1px; /* Set the border radius of the thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+background-color: #555; /* Set the color of the thumb on hover */
+}

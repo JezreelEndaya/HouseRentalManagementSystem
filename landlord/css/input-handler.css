@@ -1,0 +1,132 @@
+:root{
+    --main-color: #004d8b;
+    --seconday-color:#229bff;
+}
+
+/* input */
+.input-handler{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+/* placeholder asterisk */
+.input-handler span{
+    color: red;
+}
+
+input:focus {
+    border: 1px solid var(--seconday-color);
+}
+
+.input-handler input,
+.input-handler select{
+    padding: 0 10px;
+}
+
+
+
+.input-handler input, 
+.input-handler button,
+.input-handler select,
+.input-handler textarea{
+    width: 100%;
+    height: 40px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    border: 1px solid rgb(184, 184, 184);
+    font-family: Arial, Helvetica, sans-serif !important;
+}
+
+.input-handler input[type="file"]{
+    padding: 7px;
+}
+
+.input-handler select{
+    font-family: var(--main-font-family);
+}
+
+.input-handler select option{
+    background-color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif !important;
+}
+
+.input-handler select option:nth-child(even){
+    background-color: rgb(240, 240, 240);
+}
+
+.input-handler textarea{
+    resize: vertical;
+    padding: 10px;
+}
+
+.input-handler label{
+    font-family: var(--main-font-family);
+}
+
+/* hover */
+.input-handler button{
+    background-color: var(--seconday-color);
+}
+/* end of input */
+
+/* container of table design */
+
+
+.body .button-add{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    margin-top: 20px;
+}
+
+
+.button-add button{
+    padding: 10px 30px;
+    border-radius: 10px;
+    background-color: var(--seconday-color);
+    border: none;
+    cursor: pointer;
+}
+
+.button-add button:hover{
+    background-color: var(--main-color);
+}
+
+/* all a elements  */
+a{
+    color: black;
+    text-decoration: none;
+}
+
+/*end container of table design */
+
+/* search */
+.search{
+    position: relative;
+}
+
+.search input{
+    padding: 5px 23px;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+}
+
+.search i{
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+li .side{
+    display: flex;
+}
+
+li a img{
+    width: 20px;
+    margin-right: 10px;
+}

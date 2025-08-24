@@ -1,0 +1,62 @@
+:root {
+    --main-font-family: Arial, Helvetica, sans-serif;
+    --main-color: #004d8b;
+    --secondary-color: #229bff;
+    --warning: rgb(255, 87, 87);
+    --success: #04AA6D;
+    --success-hover: #028d5a;
+}
+
+.modal{
+    width: 600px;
+    max-height: 700px;
+    background-color: green;
+    position: absolute;
+    background-color: white;
+    border: 1px solid rgb(204, 204, 204);
+    overflow: auto;
+    top: -1000px;
+    transition: all 0.6s ease;
+    opacity: 0%;
+}
+
+.header-modal{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    background-color: var(--success);
+    padding: 20px 30px;
+}
+
+.header-modal i{
+    font-size: 1.4rem;
+    transition: all .2s ease;
+    cursor: pointer;
+}
+
+.header-modal i:hover{
+    transform: scale(1.2);
+}
+
+.header-modal p{
+    font-size: 1.3rem;
+    color: white;
+    letter-spacing: .2rem;
+}
+
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed;
+}
+
+th,td{
+    border-bottom: 1px solid rgb(216, 216, 216);
+}
+
+tr:nth-child(odd){
+    background-color: #f0f0f0;
+
+}

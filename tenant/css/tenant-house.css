@@ -1,0 +1,66 @@
+.house-image{
+    width: 100%;
+}
+
+.house-image img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.details{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0px 5px;
+}
+
+.details p{
+    display: block;
+    font-family: Arial, Helvetica, sans-serif ;
+    font-weight: 100 ;
+}
+.card-profile{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+
+.mini-card{
+    min-width: 100px;
+    width: 220px;
+    height: 70px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    justify-content: space-between;
+    transition: all .7s ease;
+    cursor: pointer;
+}
+
+.mini-card:hover{
+    transform: scale(1.1);
+}
+
+.mini-card p {
+    font-size: 1.3rem;
+}
+
+.mini-card i{
+    font-size: 3rem;
+    color: var(--secondary-color);
+}
+
+@media only screen and (max-width: 1400px) {
+
+    .card-profile{
+        display: block;
+    }
+
+    .mini-card{
+        width: 100%;
+        margin-top: 20px;
+    }
+}
